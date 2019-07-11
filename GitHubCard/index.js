@@ -5,7 +5,7 @@
 
 
 
-axios.get(`https://api.github.com/users/<Fullmetal235>`)
+axios.get(`https://api.github.com/users/Fullmetal235`)
 
 
 /* Step 2: Inspect and study the data coming back, this is YOUR 
@@ -58,18 +58,24 @@ const followersArray = [];
 */
 function gitCards(imageUrl, breed) {
   // create the elements
-  const card = document.createElement('div')
-  const img = document.createElement('img')
-  const name = document.createElement('h3')
-  const card_info = document.createElement('div')
-  const username = document.createElement('p')
-  const Location = document.createElement('p')
-  const Profile = document.createElement('p')
-  const href = document.createElement('a')
-  
+  const card = document.createElement('div');
+  const img = document.createElement('img');
+  const name = document.createElement('h3');
+  const card_info = document.createElement('div');
+  const username = document.createElement('p');
+  const Location = document.createElement('p');
+  const Profile = document.createElement('p');
+  const href = document.createElement('a');
+  const Follower = document.createElement('p');
+  const Following = document.createElement('p');
+  const Bio = document.createElement('p');
   // set the styles
-  card.classList.add('dog-card')
-  img.classList.add('dog-image')
+  card.classList.add('card')
+  card_info.classList.add('card-info')
+  name.classList.add('name')
+  username.classList.add('username')
+  
+
   
   // set the content
   img.src = imageUrl
