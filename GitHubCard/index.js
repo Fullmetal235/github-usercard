@@ -3,6 +3,11 @@
            https://api.github.com/users/<your name>
 */
 
+
+
+axios.get(`https://api.github.com/users/Fullmetal235`)
+
+
 /* Step 2: Inspect and study the data coming back, this is YOUR 
    github info! You will need to understand the structure of this 
    data in order to use it to build your component function 
@@ -23,6 +28,12 @@
           Using that array, iterate over it, requesting data for each user, creating a new card for each
           user, and adding that card to the DOM.
 */
+
+const cards = document.querySelector('.cards')
+
+
+
+
 
 const followersArray = [];
 
@@ -45,6 +56,36 @@ const followersArray = [];
 </div>
 
 */
+function gitCards(imageUrl, breed) {
+  // create the elements
+  const card = document.createElement('div');
+  const img = document.createElement('img');
+  const name = document.createElement('h3');
+  const card_info = document.createElement('div');
+  const username = document.createElement('p');
+  const Location = document.createElement('p');
+  const Profile = document.createElement('p');
+  const href = document.createElement('a');
+  const Follower = document.createElement('p');
+  const Following = document.createElement('p');
+  const Bio = document.createElement('p');
+  // set the styles
+  card.classList.add('card')
+  card_info.classList.add('card-info')
+  name.classList.add('name')
+  username.classList.add('username')
+  
+
+  
+  // set the content
+  img.src = imageUrl
+  title.textContent = `Breed: ${breed}`
+  
+  // put together
+  card.appendChild(img)
+  card.appendChild(title)
+  return card
+}
 
 /* List of LS Instructors Github username's: 
   tetondan
@@ -53,3 +94,5 @@ const followersArray = [];
   luishrd
   bigknell
 */
+
+
