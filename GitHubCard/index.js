@@ -52,6 +52,27 @@ const followersArray = [];
 </div>
 
 */
+function createDogCard(imageUrl, breed) {
+  // create the elements
+  const card = document.createElement('div')
+  const img = document.createElement('img')
+  const name = document.createElement('h3')
+  const card_info = document.createElement('div')
+  const username = document.createElement('div')
+  
+  // set the styles
+  card.classList.add('dog-card')
+  img.classList.add('dog-image')
+  
+  // set the content
+  img.src = imageUrl
+  title.textContent = `Breed: ${breed}`
+  
+  // put together
+  card.appendChild(img)
+  card.appendChild(title)
+  return card
+}
 
 /* List of LS Instructors Github username's: 
   tetondan
