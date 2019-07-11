@@ -24,6 +24,13 @@
           user, and adding that card to the DOM.
 */
 
+const cards = document.querySelector('.cards')
+const hub = 'git'
+axios.get('https://api.github.com/users/Fullmetal235')
+
+
+
+
 const followersArray = [];
 
 /* Step 3: Create a function that accepts a single object as its only argument,
