@@ -3,6 +3,11 @@
            https://api.github.com/users/<your name>
 */
 
+
+
+axios.get(`https://api.github.com/users/<Fullmetal235>`)
+
+
 /* Step 2: Inspect and study the data coming back, this is YOUR 
    github info! You will need to understand the structure of this 
    data in order to use it to build your component function 
@@ -25,8 +30,7 @@
 */
 
 const cards = document.querySelector('.cards')
-const hub = 'git'
-axios.get('https://api.github.com/users/Fullmetal235')
+
 
 
 
@@ -52,13 +56,16 @@ const followersArray = [];
 </div>
 
 */
-function createDogCard(imageUrl, breed) {
+function gitCards(imageUrl, breed) {
   // create the elements
   const card = document.createElement('div')
   const img = document.createElement('img')
   const name = document.createElement('h3')
   const card_info = document.createElement('div')
-  const username = document.createElement('div')
+  const username = document.createElement('p')
+  const Location = document.createElement('p')
+  const Profile = document.createElement('p')
+  const href = document.createElement('a')
   
   // set the styles
   card.classList.add('dog-card')
